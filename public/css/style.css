@@ -1,0 +1,199 @@
+.seconed-nav{color: #fff;}
+
+.logo-life img{width: 200px;display: inline-block}
+.right-menu{padding-left: 300px}
+.right-menu li a{font-size: 18px;margin-right: 40px;}
+
+.right-menu li a:hover {
+    animation: neon 2s infinite linear;
+}
+.right-menu li a:focus,.right-menu li:focus{outline: none}
+
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: none;
+    }
+    50% {
+        text-shadow: 2px 2px 10px #d81324, -2px -2px 10px #d81324;
+    }
+}
+
+/*Sticky*/
+.sticky{
+    position: fixed;
+    top: 0;
+    z-index: 99999999;
+    width: 100%;
+    background-color: #fff;
+}
+
+/*carousel*/
+.carousel{position: relative}
+.carousel img{
+    height: calc(100vh - 120px);
+    object-fit: cover;
+}
+.carousel-indicators li{
+    border-radius: 50%;
+    width: 10px;
+    height: 9px;
+    border: 1px solid #d81324;
+}
+.carousel-indicators .active{background: #d81324}
+.carousel-info{position: absolute;
+    top: 0;height: 100%;width: 100%;background: rgba(0,0,0,.5);text-align: right}
+.carousel-info{position: absolute;
+    top: 0;height: 100%;width: 100%;background: rgba(0,0,0,.5);}
+.carousel-info a{
+    position: absolute;
+    display: inline-block;
+    width: 180px;
+    font-size: 18px;
+    height: 45px;
+    background: #d81324;
+    border-radius: 6px;
+    line-height: 45px;
+    padding: 0 10px;
+    color: #fff;
+    top:55%;
+    right:15%;
+}
+.carousel-info h5{
+    position: absolute;
+    top:40%;right:15%;
+    color: #000;
+    font-size: 60px;
+    line-height: 50px;
+    color: #fff;
+    font-family: sans-serif,Arial;
+    font-weight: bold;
+    width: 50%;
+}
+/*end slider*/
+/*Responsive*/
+@media (min-width: 992px) {
+    .right-menu{
+        flex-direction: row-reverse!important;
+    }
+}
+
+
+@media(max-width: 1358px){
+    .right-menu li a{font-size: 18px;margin-right: 30px;}
+    .right-menu{padding-left: 220px}
+}
+@media(max-width: 1288px){
+    .right-menu li a{font-size: 16px;margin-right: 30px;}
+    .right-menu{padding-left: 200px}
+}
+@media(max-width: 1160px){
+    .right-menu li a{font-size: 16px;margin-right: 30px;}
+    .right-menu{padding-left: 150px}
+}
+@media(max-width: 1112px){
+    .right-menu li a{font-size: 16px;margin-right: 30px;}
+    .right-menu{padding-left: 20px}
+}
+@media (min-width: 992px) {
+    .seconed-nav{height: 100px}
+}
+@media (max-width: 385px) {
+    .right-menu img{width: 150px;display: inline-block}
+}
+@media (max-width: 992px) {
+    .logo-life img{
+        width: 100px;
+    }
+}
+/*responsive slider*/
+/*Respnsive carousel*/
+@media(max-width: 1258px){
+    .carousel .carousel-info a{
+        top:60%;
+    }
+}
+@media(max-width: 1240px){
+    .carousel .carousel-info h5 {
+        width: 65%;
+    }
+}
+@media(max-width: 953px){
+    .carousel .carousel-info .wide-carousel-info {
+        width: 75%;
+    }
+}
+@media(max-width: 831px){
+    .carousel .carousel-info h5{
+        font-size: 45px;
+        width: 74%;
+    }
+    .carousel .carousel-info .wide-carousel-info {
+        width: 80%;
+    }
+}
+@media(max-width: 693px){
+    .carousel .carousel-info h5{
+        font-size: 41px;
+        width: 74%;
+        left: 13%;
+    }
+    .carousel .carousel-info .wide-carousel-info {
+        width: 78%;
+        font-size: 38px;
+    }
+}
+@media(max-width: 551px){
+    .carousel .carousel-info h5{
+        font-size: 37px;
+        width: 74%;
+        left: 13%;
+    }
+    .carousel .carousel-info .wide-carousel-info {
+        width: 78%;
+        font-size: 35px;
+    }}
+@media(max-width: 479px){
+    .carousel .carousel-info h5{
+        font-size: 34px;
+        width: 74%;
+        left: 13%;
+    }
+    .carousel .carousel-info .wide-carousel-info {
+        width: 78%;
+        font-size: 28px;
+    }}
+@media(max-width: 407px){
+    .carousel .carousel-info h5{
+        font-size: 30px;
+        width: 74%;
+        left: 13%;
+    }
+    .carousel .carousel-info .wide-carousel-info {
+        width: 78%;
+        font-size: 25px;
+    }}
+@media(max-width: 359px) {
+    .carousel .carousel-info h5 {
+        font-size: 26px;
+        width: 74%;
+        left: 13%;
+    }
+}
+@media(max-width: 336px) {
+    .carousel .carousel-info .wide-carousel-info {
+        width: 78%;
+        font-size: 23px;
+    }
+}
+@media(max-width: 311px) {
+    .carousel .carousel-info h5 {
+        font-size: 23px;
+        width: 74%;
+        left: 13%;
+    }
+    .carousel .carousel-info .wide-carousel-info {
+        width: 78%;
+        font-size: 20px;
+    }
+}
